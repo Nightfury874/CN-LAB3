@@ -28,7 +28,7 @@ int main () {
 	int sock = socket (AF_INET, SOCK_STREAM, 0);			
 	struct sockaddr_in gbnServAddr;
 	if (sock == -1)
-		exit (0)
+		exit (0);
 	bzero (&gbnServAddr, sizeof (gbnServAddr));
 	gbnServAddr.sin_family = AF_INET;
 	gbnServAddr.sin_addr.s_addr = htonl (INADDR_ANY);
